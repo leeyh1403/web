@@ -1,7 +1,7 @@
 $(document).ready(function(){
  
 //  화면 높이 맞추기    
-$('#main').css('height', $(window).height());
+//$('#main').css('height', $(window).height());
  
     
  
