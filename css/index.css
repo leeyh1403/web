@@ -23,7 +23,7 @@
 
 /*메인*/
 #wrap{width: 100%; height: auto;}
-#main{ width: 100%; height: auto;  background: url(../img/main_bg4.png)50% 0 no-repeat; position: relative; overflow: hidden;}
+#main{width: 100%;height: 100vh;background: url(../img/main_bg5.png)50% 0 no-repeat;position: relative;overflow: hidden;}
 #main .container{width: 1200px;margin: 0 auto;/* position: absolute; */}
 header{/* text-align: center; */position: fixed;text-align: center;z-index: 99999;margin: 0 auto;left: 0;/* right: 0; */width: 100%;height: 75px;line-height: 75px;/* padding-top: 35px; */}
 header.activated{background-color:#fff; box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);}
