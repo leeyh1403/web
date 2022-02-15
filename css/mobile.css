@@ -1,0 +1,51 @@
+@media all and ( max-width:1200px){
+    #main .container{width: 90%;}
+    #main .sub_box li{padding-top: 30px 0 30px 0;}
+    #main .sub_box li a{ font-size: 6em; }
+    #about .in_about{ width: 98%;}
+    #about .intro_txt{ width: 45%;}
+    #about .box{ width: 45%; }
+    #portfolio .in_bg{ width: 98%; }
+    #portfolio .product{ width: 98%; }
+    #contact .in_con{width: 98% }
+     
+}/*end*/
+
+
+@media all and ( max-width:1000px){ 
+    
+    #about .me{float: none; text-align: center;}
+    #about .intro_txt{  width: 100%; padding: 4% 5% 0 5%;}
+    #about .box{ width: 90%;padding: 3% 5% 0 5%;}
+    #portfolio #port{height: 390px;}
+    #portfolio{  height: 3000px; }
+    #portfolio .bg{height: 3000px;}
+    #portfolio .in_bg{height: 3000px;}
+}
+
+@media all and ( max-width:700px){
+    #portfolio #port{ float: none;width: 80%; height: 450px;  margin:0 auto;  margin-bottom: 10px;}
+    #portfolio #port:last-child{ margin: 0 auto;}
+    #portfolio{height: 7000px;}
+    #portfolio .bg{ height: 7000px;}
+    #portfolio .in_bg{ height: 7000px;}
+    #portfolio .product .proleft{  width: 100%;}
+    #portfolio .product .proright{display: none;}
+    #contact .in_con{width: 80%;}
+    #contact .in_con .conbox li{ float: none; width: 80%; margin: 0 auto; margin-bottom: 30px;}
+    #contact .thank .p1{ font-size: 40px; line-height: 55px;}
+    #contact .thank .p2{ font-size: 15px;}
+        
+}
+
+
+@media all and ( max-width:500px ){
+
+    #portfolio #port{ height: 400px; }
+    #portfolio{ height: 6000px;}
+    #portfolio .bg{  height: 6000px;}
+    #portfolio .in_bg{ height: 6000px;}
+
+
+
+}/*end*/

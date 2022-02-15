@@ -1,0 +1,177 @@
+.skill{float: right;width: 40%;}
+.skill .skill_dsc{color: #666;}
+.skill .skill_dsc li{padding-bottom: 10px;}
+.skill .skill_bar{padding-top: 20px;}
+.skill .skill_bar li{;padding-top: 20px;}
+.skill .skill_bar .bar_wrap{position: relative;}
+.skill .skill_bar .bar_basic{margin-top: 10px;width: 100%;height: 3px;background-color: #dfdfdf;}
+.skill .skill_bar .bar_move{position: absolute;top: 0;left: 0;width: 0;height: 3px;background-color: #ff0073;}
+.skill .skill_bar .bar_move.bar_01{width: 90%;transition: 1s;}
+.skill .skill_bar .bar_move.bar_02{width: 90%;transition: 1s;}
+.skill .skill_bar .bar_move.bar_03{width: 70%;transition: 1s;}
+.skill .skill_bar .bar_move.bar_04{width: 50%;transition: 1s;}
+.skill .skill_bar .bar_move.bar_05{width: 90%;transition: 1s;}
+
+
+
+
+.clearfix{*zoom:1;}
+.clearfix:after{display:block;clear:both;content:'';}
+
+.ghost {transition:all 0.7s ease-in-out;-webkit-transition:all 0.7s ease-in-out;-moz-transition:all 0.7s ease-in-out;}
+.ghostLock {transform:translateY(80px);opacity: 0;}
+
+/*메인*/
+#wrap{width: 100%; height: auto;}
+#main{ width: 100%; height: auto;  background: url(../img/main_bg4.png)50% 0 no-repeat; position: relative; overflow: hidden;}
+#main .container{width: 1200px;margin: 0 auto;/* position: absolute; */}
+header{/* text-align: center; */position: fixed;text-align: center;z-index: 99999;margin: 0 auto;left: 0;/* right: 0; */width: 100%;height: 75px;line-height: 75px;/* padding-top: 35px; */}
+header.activated{background-color:#fff; box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);}
+#main .header h1{float: left; margin-top: 5px;}
+#main .header nav{float: right;width: 70%;}
+#main .header ul{/* position: fixed; *//* text-align: center; *//* z-index: 99999; *//* margin: 0 auto; *//* left: 0; *//* right: 0; *//* width: 100%; *//* height: 100px; *//* line-height: 100px; *//* padding-top: 35px; */}
+#main .header li{/* display: inline-block; *//* width: 10%; */float: left;width: 25%;}
+/*#main .header li:after{content: "";display: inline-block;width: 1px; height: 18px; background-color: #b9b9b9;margin: 0 50px 0 50px;}*/
+#main .header li.bld_none:after{ display: none;}
+#main .header li a{ font-size: 23px; color: #a6a6a6; font-weight: 300;transition: 0.2s;}
+#main .header li a:hover{ color: #8cddeb; transition: 0.2s; }
+#main .center{/* text-align: center; */padding-top: 240px;}
+#main .logo_txt{ width: 225px; height: 80px; margin: 0 auto;}
+#main .scroll{ height: auto; position: relative; top: 50px; left: 50%;margin-left: -52.5px;animation-name:down01;animation-duration:2s; animation-direction:normal;animation-iteration-count: infinite;}
+@keyframes down01 {
+    from { top:30px; }
+    to {top:50px;}
+}
+
+
+/*타이핑효과*/
+#typing {
+   display: inline-block;
+   animation-name: cursor;
+   animation-duration: 0.3s;
+   animation-iteration-count: infinite;
+ }
+@keyframes cursor{
+    0%{border-right: 1px solid #fff}
+    50%{border-right: 1px solid #000}
+    100%{border-right: 1px solid #fff}
+}
+
+
+/*소개*/
+#about{ width: 100%; height: auto; position: relative; z-index: 9;}
+#about .in_about{ width: 1180px; height: auto; margin:0 auto; position: relative; padding-bottom: 80px;}
+#about .title{ width: 405px; height: 225px; margin: 0 auto; margin-top: 30px;}
+#about .introduction{ width: 100%; height: auto; margin-top: 80px; overflow: hidden;}
+#about .me{float: left;}
+#about .intro_txt{ float: right;  width: 53%; border-collapse: separate; box-sizing: border-box;}
+#about .intro_txt td{box-sizing: border-box; font-size: 16px;padding: 15px 0 15px 0;}
+#about .intro_txt .td1{ text-align:left; font-weight: bold;}
+#about .intro_txt .td2{ text-align:right; font-weight: 300; color: #acacac;}
+#about .box{ padding-top: 50px; width: 53%;height: auto; float: right;}
+
+.zt-skill-bar {color: #fff; font-size: 14px; line-height: 25px; height: 25px;  margin-bottom: 5px;background-color: rgba(0,0,0,0.1); -webkit-border-radius: 2px; -moz-border-radius: 2px;-ms-border-radius: 2px;border-radius: 2px;}
+.zt-skill-bar * { -webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease; -ms-transition: all 0.5s ease; -o-transition: all 0.5s ease; transition: all 0.5s ease; }
+.zt-skill-bar div { background-color: #FFDE5B; position: relative; padding-left: 25px; width: 0; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms- border-radius: 2px; border-radius: 2px;}
+.zt-skill-bar span {display: block;position: absolute;right: 0; top: 0; height: 100%; padding: 0 5px 0 10px; background-color: #666; -webkit-border-radius: 0 2px 2px 0; -moz-border-radius: 0 2px 2px 0;-ms-border-radius: 0 2px 2px 0;border-radius: 0 2px 2px 0; }
+.zt-skill-bar span:before { content: ""; position: absolute; width: 6px; height: 6px;top: 50%;left: -3px; margin-top: -3px; background-color: #666; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);}
+
+
+#skills{padding: 17px 0 0 30px;color: #333;float: right;width: 53%;}
+#skills>h2{color:#333;margin-bottom: 19px;}
+#skills>.stick{/* display: flex; */justify-content: space-around;}
+#skills>.stick>article{width: 100%;}
+#skills>.stick>article>div{margin-bottom: 18px;}
+#skills>.stick>article>div>h3{float: left;width:17%;/* height: 10px; */color: #bfbfbf;/* line-height: 10px; */text-align: left;font-size: 15px;font-weight: 500;padding-right: 8%;}
+#skills>.stick>article>div>.progress{position: relative;float: left;width: 100%;height: 10px;background-color: #3a4149;border-radius: 3px;}
+#skills>.stick>article>div>.progress>.bar{width:0%;/*js에서 동적으로 할당*/height: 100%;background-color: #FFDE5B;;transition: all 2s;}
+#skills>.stick>article>div>.progress>.bar>span{position: absolute;right: 0;top:-20px;}
+
+/*파이차트*/
+#skills>.circle{display: flex;justify-content: space-around;margin-top:40px;}
+#skills>.circle>article{width:140px;height: 200px;}
+#skills>.circle>article>.chart{position: relative;width:140px;height: 140px;text-align: center;}
+#skills>.circle>article>.chart>.percent{font-weight: 500;font-size: 25px;line-height: 140px;}
+#skills>.circle>article>.chart>.percent:after{content: '%'}
+#skills>.circle>article>.chart>.tit{height: 60px;line-height: 60px;color:#fff;font-size: 18px;}
+
+/*파이차트 플러그인에서 반드시 요구하는 css 코드*/
+#skills>.circle>article>.chart canvas{position: absolute;left:0;top:0;}
+
+@media screen and (max-width:768px){
+    #skills{padding-top:50px;}/*수정*/
+    #skills>.stick{display: block;}/*수정*/
+    #skills>.stick>article{width:100%;}/*수정*/
+    #skills>.stick>article>div{padding:0 7%;}/*수정*/
+    #skills>.stick>article>div>h3{font-size: 15px;}/*수정*/
+
+    /*파이차트*/
+    #skills>.circle{display: flex;flex-flow: wrap;justify-content: space-around;margin-top:70px;}
+
+}/* end of @media #skills*/
+
+
+
+/*포트폴리오*/
+#portfolio{width: 100%; height: 4500px; position: relative;}
+#portfolio .title{ width: 342px; height: 222px; margin: 0 auto; position: relative; z-index: 9;}
+#portfolio .bg{ width: 100%; height: 4500px; background-color: #f5f5f5; position: absolute;top: 170px;}
+#portfolio .in_bg{ width: 1180px; height: 4500px; margin: 0 auto; padding-top: 60px;clear: both;}
+#portfolio .bg .webtitle{text-align: center; margin-top: 50px;}
+#portfolio .bg .webtitle h5{font-size: 30px; color:#333;  font-weight:600;margin: 0 auto;}
+#portfolio .bg .webtitle p{ font-size: 14px; color: #a0a0a0;}
+#portfolio .port_wrap{width: 100%; margin-top: 40px; margin-bottom: 80px; float: left;}
+#portfolio .port_wrap2{ width: 100%;}
+#portfolio #port{ width: 32%;height: 410px; background-color: #fff; border: 1px solid #e5e5e5;box-sizing: border-box;border-radius: 10px; float: left; margin-right: 2%; box-shadow: 5px 5px 10px 0px #b1b1b1;padding: 15px;}
+#portfolio #port:last-child{ margin-right: 0;}
+#portfolio #port img:hover{ transform:scale(1.05); transition: 0.5s;}
+#portfolio #port a img{width: 98%;transition: 0.5s;  margin: 0 auto;}
+#portfolio .info h3{ text-align: center; font-size: 27px; color: #333; margin-top: 15px;}
+#portfolio .info h3 a{transition: 0.2s;}
+#portfolio .info h3:hover a{ color: #8cddeb; transition: 0.3s;}
+#portfolio .text{ width: 82%; margin:0 auto; padding-top: 15px;}
+#portfolio .info img{ float: left;}
+#portfolio .info p{float:right; width: 70%; font-size: 16px;}
+#portfolio .info p{float:right; width: 70%; font-size: 16px;}
+.webtitle_2 h5, .webtitle_3 h5, .webtitle_4 h5{ text-align: center; font-size: 30px; color:#333; font-weight:600; margin: 0 auto;}
+.webtitle_2 p , .webtitle_3 P, .webtitle_4 P{text-align: center;color: #a0a0a0; font-size: 14px;}
+#portfolio .port_wrap2{margin-top: 30px;float: left; clear: both;}
+
+
+#portfolio .product{width: 1180px;height: auto;margin-top: 100px;float: left;}
+#portfolio .product .proleft{ width: 73%;height: auto;float: left;margin-top: 30px;}
+#portfolio .product .proleft .inbox li{width: 48%;height: auto;float: left; padding-left: 3%; overflow: hidden;padding-bottom: 15px;}
+#portfolio .product .inbox li:nth-child(1){ clear: both;padding: 0;}
+#portfolio .product .inbox li img{ width: 100%;}
+#portfolio .product .inbox li img:hover{ transform:scale(1.05);transition: 0.5s; opacity: 0.5;}
+#portfolio .product .proright{width: 25.5%;height: auto; float: right; margin-top: 30px; overflow: hidden;}
+#portfolio .product .proright img{width: 100%;}
+#portfolio .product img:hover{ transform:scale(1.05);transition: 0.5s;  opacity: 0.5;}
+#portfolio .product .probottom{ width: 100%; height: auto; float: left; padding-top: 7px;}
+#portfolio .product .probottom li{ width: 32.5%; height: auto; float: left; overflow: hidden; }
+#portfolio .product .probottom .li2{ margin-left: 1.25%; margin-right: 1.25%;}
+#portfolio .space{  margin-top: 100px;  float: left;width: 100%;}
+#portfolio .space ul{ width: 100%; margin-top: 30px;}
+#portfolio .space .space_mg{ margin-right: 0 !important;}
+
+
+/*contact*/
+#contact{ width: 100%; height: auto;padding:150px 0 0 0;}
+#contact .in_con{ width: 1180px; margin: 0 auto; padding: 20px 0 80px 0;}
+#contact .in_con .title{width: 324px; height: auto;margin:0 auto; padding-top: 50px; z-index: 999999;}
+#contact .in_con .conbox{ overflow: hidden; padding-top: 50px;}
+#contact .in_con .conbox li{float: left; width: 33.33%;text-align:center;}
+#contact .in_con .conbox li h3{font-size: 20px;}
+#contact .in_con .conbox li p{font-size: 16px;}
+#contact .thank{ width: 100%; background-color: #f5f5f5; padding: 50px 0 50px 0;}
+#contact .thank .txt{text-align: center; font-weight: 900;}
+#contact .thank .p1{ font-size: 55px; color: #8cddeb;line-height: 65px;}
+#contact .thank .p2{font-size: 16px; color: #acacac;}
+
+
+/*footer*/
+#footer{width: 100%;height: 60px; float: left;background-color: #474747;}
+#footer .txt{ width: 232px; height: 32px;margin:0 auto; margin-top: 13px;}
+
+
+
