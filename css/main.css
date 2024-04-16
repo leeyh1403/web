@@ -183,9 +183,10 @@ footer{text-align: center;padding: 25px 0;color: #909090;font-weight: 200;backgr
 
   @media all and (max-width:480px){
     main{font-size: 0.7em;}
-    #section-01 .main_txt{font-size: 0.35em;}
+    #section-01 .main_txt{font-size: 0.45em;}
     .main_txt_wrap strong.maintxt_03:after{ width: 12px; height: 12px;  bottom: 10px;  right: -19px;}
     header .logo{  width: 54px;}
     #section-02 .about .abt_r{ display: flex; flex-direction: column;}
+    #section-04 ul li .imgbox{ height: 280px;}
       
     }
