@@ -106,7 +106,7 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 50px;line-heig
 #section-04 ul li .imgbox{box-shadow: 0 0 12px rgba(0,0,0,0.25);overflow: hidden;transition: 0.3s;height: 600px;/* width: 520px; */position: relative;/* border-radius: 10px; */}
 #section-04 ul li .imgbox img{ transition: 0.3s;}
 #section-04 ul li .imgbox:hover img{transform: scale(1.1);transition: 0.3s;}
-#section-04 ul li {transition: opacity 0.2s; position: relative; margin: 0;}
+#section-04 ul li {/* transition: opacity 0.2s; */position: relative;margin: 0;}
 #section-04 ul li img {width: 100%}
 #section-04 ul li .txtbox {width: 100%;height: 100%;text-align: left;color: #fff;bottom: 50%;transform: translateY(50%);opacity: 0;position: absolute;width: 100%;transition: all .3s ease;padding: 65px;}
 #section-04 ul li .imgbox {opacity: 1;transition: all 0.3s ease 0s;overflow: hidden}
@@ -191,6 +191,8 @@ footer{text-align: center;padding: 25px 0;color: #909090;font-weight: 200;backgr
     .main_txt_wrap strong.maintxt_03:after{ width: 12px; height: 12px;  bottom: 10px;  right: -19px;}
     header .logo{  width: 54px;}
     #section-02 .about .abt_r{ display: flex; flex-direction: column;}
+    #section-04 ul li .txtbox{padding: 25px;font-size: 0.9em;}
+    #section-04 ul li:hover .txtbox strong{ font-size: 2em;  margin-bottom: 10px;  padding-bottom: 10px;}
     #section-04 ul li .imgbox{ height: 280px;}
       
     }
