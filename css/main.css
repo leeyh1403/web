@@ -118,7 +118,7 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 50px;line-heig
 #section-05{padding: 100px 0;/* height: 100vh; */z-index: 9;position: relative;background: #fff;z-index: 0;overflow: hidden;}
 #section-05 .cntact_l{ float: left;  width: 40%;}
 #section-05 .cntact_r{  float: right;  width: 50%;  padding: 109px 0;}
-#section-05 .cntact_r ul{display:flex;}
+#section-05 .cntact_r ul{display:flex;flex-direction: row;flex-wrap: nowrap;}
 #section-05 .cntact_r ul li{ flex: auto;}
 #section-05 .cntact_r ul li strong{font-size: 1.3em;}
 #section-05 .cntact_r ul li p{ font-size: 1.05em; font-weight: 300;}
@@ -132,6 +132,13 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 50px;line-heig
 footer{text-align: center;padding: 25px 0;color: #909090;font-weight: 200;background: #f7f7f7;position: relative;z-index: 1;}
 
 
+
+
+
+
+
+/*=========== 반응형 ============*/
+
 @media all and (max-width:1500px){
     main{font-size: 0.9em;}
     #section-01 .main_img{display:none;}
@@ -144,11 +151,13 @@ footer{text-align: center;padding: 25px 0;color: #909090;font-weight: 200;backgr
     #section-04 ul li .imgbox{height: 500px;}
   }
 
+
+
   @media all and (max-width:1024px){
     main{font-size: 0.8em;}
     .sidebar_menu{   font-size: 0.7em;  width: 50%;}
     .main_txt_wrap strong.maintxt_02{text-align:left;}
-    #section-02{padding: 50px 0 50px 0;position: relative;z-index: 1;}
+    #section-02{padding: 50px 0 50px 0;position: relative;}
     strong.imp_tit i{ width: 60px;}
     strong.imp_tit:before{}
     strong.imp_tit{ font-size: 3em;}
@@ -171,6 +180,9 @@ footer{text-align: center;padding: 25px 0;color: #909090;font-weight: 200;backgr
     #section-05 .cntact_r{width:100%;float:none;padding: 60px 0;text-align: center;}
   }
 
+
+
+
     @media all and (max-width:980px){
       .cursor_wrap{display:none;}
       #section-01 .main_txt{font-size: 0.5em;}
@@ -182,17 +194,31 @@ footer{text-align: center;padding: 25px 0;color: #909090;font-weight: 200;backgr
       .animated-title{ font-size: 11em;}
     }
 
+
+
+
   @media all and (max-width:480px){
     header{  padding: 30px 0;}
+    .bg_line_wr{display:none;}
     main{font-size: 0.7em;}
     .sidebar_menu{font-size: 0.5em;width: 80%;}
     .menu_wrap li{ padding: 15px 0;}
     #section-01 .main_txt{font-size: 0.45em;}
     .main_txt_wrap strong.maintxt_03:after{ width: 12px; height: 12px;  bottom: 10px;  right: -19px;}
     header .logo{  width: 54px;}
-    #section-02 .about .abt_r{ display: flex; flex-direction: column;}
+    #section-02 .about .abt_r{display: flex;flex-direction: column;text-align: left;}
+    #section-02 .about .abt_r > div{margin-bottom: 20px;display: flex;border-bottom: 1px dashed #c5c5c5;padding-bottom: 20px;}
+    #section-02 .about .abt_r > div:last-child{border-bottom:none;}
+    #section-02 .about .abt_r > div strong{margin-bottom: 5px;flex: 1 45%;}
+    #section-02 .about .abt_r > div ul{ flex: 1 65%;}
     #section-04 ul li .txtbox{padding: 25px;font-size: 0.9em;}
     #section-04 ul li:hover .txtbox strong{ font-size: 2em;  margin-bottom: 10px;  padding-bottom: 10px;}
     #section-04 ul li .imgbox{ height: 280px;}
+    #section-02 .about .abt_l{/* text-align:left; */}
+    #section-05 .cntact_r{ padding: 40px 0;}
+    #section-05 .cntact_r ul{display:flex;flex-direction: column;text-align: left;}
+    #section-05 .cntact_r ul li{flex: 1 100%;display: flex;flex-direction: row;margin-bottom: 20px;border-bottom: 1px dashed #c9c9c9;padding-bottom: 20px;}
+    #section-05 .cntact_r ul li strong{flex: 1 30%;}
+    #section-05 .cntact_r ul li p{ flex: 1 70%;}
       
     }
