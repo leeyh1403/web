@@ -11,8 +11,6 @@ $('.close_btn>a').on('click', function(){
 	$('.menu_bg').hide(); 
 	$('.sidebar_menu').animate({
 		right: '-' + 50 + '%'
-				},function(){
-					$('.sidebar_menu').hide();          
 				});  
 });
 	
@@ -85,6 +83,7 @@ window.addEventListener("mousemove", e => {
 
 
 });
+	
 	
 	
 	
