@@ -10,7 +10,7 @@ $('.menu_btn>a').on('click', function(){
 $('.close_btn>a').on('click', function(){
 	$('.menu_bg').hide(); 
 	$('.sidebar_menu').animate({
-		right: '-' + 50 + '%'
+		right: '-' + 100 + '%'
 				});  
 });
 	
