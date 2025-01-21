@@ -15,19 +15,19 @@ $('.close_btn>a').on('click', function(){
 });
 	
 	
-	
+
 // 스크롤 이벤트	
-$(window).scroll(function() {
-	var scroll = $(window).scrollTop();
-	//console.log(scroll);
-	if (scroll >= 50) {
-		//console.log('a');
-		$("#section-01").addClass("change");
-	} else {
-		//console.log('a');
-		$("#section-01").removeClass("change");
-	}
-});
+// $(window).scroll(function() {
+// 	var scroll = $(window).scrollTop();
+	
+// 	if (scroll >= 50) {
+		
+// 		$("#section-01").addClass("change");
+// 	} else {
+	
+// 		$("#section-01").removeClass("change");
+// 	}
+// });
 	
 	
 let didScroll = false;
