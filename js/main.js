@@ -83,6 +83,18 @@ window.addEventListener("mousemove", e => {
 
 
 });
+
+$('.pp-wrap li.article').click(function(e){
+      e.preventDefault();
+      // 클릭된 li의 data-tab 변수 할당
+      let current = $(this).attr('data-tab');
+      // 모든 li와 div에서 클래스 on 제거
+      $('.pp-wrap li.article').removeClass('on');
+      $('.pp-content').removeClass('on');
+      // 클릭된 li와 data-tab과 동일한 id를 가진 div에 클래스 on 추가
+      $(this).addClass('on');
+      $('#' + current).addClass('on');
+    });
 	
 	
 	
