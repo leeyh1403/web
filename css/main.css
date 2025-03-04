@@ -123,18 +123,18 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 40px;line-heig
 #section-04 .sec_tit p{ font-size: 2.3em;  line-height: 1.2;}
 #section-04  ul.list{display: flex;justify-content: space-between;flex-wrap: wrap;/* flex: 1 1 80%; */position: relative;width: 100%;}
 #section-04 ul.list li:nth-child(2n){margin-top: 90px;transition-delay: 0.4s;top: 100px;margin-bottom: 60px;}
-#section-04 ul.list li .imgbox{box-shadow: 0 0 12px rgba(0,0,0,0.25);overflow: hidden;transition: 0.3s;height: 600px;/* width: 520px; */position: relative;/* border-radius: 10px; */}
+#section-04 ul.list li .imgbox{box-shadow: 0 0 12px rgba(0,0,0,0.25);overflow: hidden;/* transition: 0.3s; */height: 600px;/* width: 520px; */position: relative;/* border-radius: 10px; */}
 #section-04 ul.list li .imgbox img{ transition: 0.3s;}
 #section-04 ul.list li .imgbox:hover img{transform: scale(1.1);transition: 0.3s;}
 #section-04 ul.list li {/* transition: opacity 0.2s; *//* position: relative; *//* margin: 0; */}
 #section-04 ul.list li img {width: 100%}
 #section-04 ul.list li .txtbox {width: 100%;height: 100%;text-align: left;color: #fff;bottom: 50%;transform: translateY(50%);opacity: 0;position: absolute;width: 100%;transition: all .3s ease;padding: 65px;}
-#section-04 ul.list li .imgbox {opacity: 1;transition: all 0.3s ease 0s;overflow: hidden}
+#section-04 ul.list li .imgbox {opacity: 1;/* transition: all 0.3s ease 0s; */overflow: hidden}
 #section-04 ul.list li:hover .imgbox {background-color: #243da9;}
 #section-04 ul.list li:hover img {transform: scale(1.1, 1.1);transition: all .3s ease;opacity: 0.15;cursor: pointer; }
 #section-04 ul.list li:hover .txtbox {opacity: 1;transition: all .3s ease; }
-#section-04 ul.list li:hover .txtbox strong{font-size: 2.5em;display: block;margin-bottom: 23px;font-weight: 600;border-bottom: 1px solid #ffffff47;padding-bottom: 27px;line-height: 1.1;}
-#section-04 ul.list li:hover .txtbox p{ font-size: 1.2em; margin-bottom: 20px;  color: rgba(255,255,255,0.7);}
+#section-04 ul.list li .txtbox strong{font-size: 2.5em;display: block;margin-bottom: 23px;font-weight: 600;border-bottom: 1px solid #ffffff47;padding-bottom: 27px;line-height: 1.1;}
+#section-04 ul.list li .txtbox p{ font-size: 1.2em; margin-bottom: 20px;  color: rgba(255,255,255,0.7);}
 #section-04 #menu2 ul.list li .imgbox{  height: auto;   box-shadow: none;}
 
 .pp-wrap{width: 100%;display: flex;align-items: flex-start;}
@@ -148,42 +148,54 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 40px;line-heig
 .pp-content.on{display: block;}
 
 
-/*모달 팝업 영역 스타일링*/
-.modal {
-  /*팝업 배경*/
-    display: none; /*평소에는 보이지 않도록*/
-      position: absolute;
-      top:0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-      background: rgba(0,0,0,0.5);
-  }
 
-  .modal.on {
-    display: block;
+
+
+
+
+
+/* 모달 백그라운드 */
+.modal {
+  display: none;  /* 기본적으로 숨겨짐 */
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
 }
-  .modal .modal_popup {
-  /*팝업*/
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 20px;
-      background: #ffffff;
-      border-radius: 20px;
-  }
-  .modal .modal_popup .close_btn {
-      display: block;
-      padding: 10px 20px;
-      background-color: rgb(116, 0, 0);
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      cursor: pointer;
-      transition: box-shadow 0.2s;
-  }
+
+/* 모달 콘텐츠 */
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 800px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+}
+
+/* 닫기 버튼 */
+.close-btn {
+  color: #ffffff;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  position: fixed;
+  right: 40px;
+  top: 30px;
+}
+
+
+
 
 
 
