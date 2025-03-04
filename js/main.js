@@ -97,12 +97,61 @@ $('.pp-wrap li.article').click(function(e){
     });
 	
 	
-	
-	
-	
-	
+
+
 	
 });
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 모든 링크에 이벤트 리스너 추가
+    const links = document.querySelectorAll('a[data-modal-id]');
+    links.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            const modalId = this.getAttribute('data-modal-id');
+            const modal = document.getElementById(modalId);
+            
+            // 모달 열기
+            modal.style.display = "block";
+            
+            // body 스크롤 막기
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    // 모든 모달의 닫기 버튼에 이벤트 리스너 추가
+    const closeBtns = document.querySelectorAll('.close-btn');
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            
+            // 모달 닫기
+            modal.style.display = "none";
+            
+            // body 스크롤 복원
+            document.body.style.overflow = "auto";
+        });
+    });
+
+    // 모달 외부 클릭 시 닫기
+    window.addEventListener('click', function(event) {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = "auto"; // 스크롤 복원
+            }
+        });
+    });
+});
+
+
+
+
 
 
 
