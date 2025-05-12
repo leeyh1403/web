@@ -95,6 +95,28 @@ $('.pp-wrap li.article').click(function(e){
       $(this).addClass('on');
       $('#' + current).addClass('on');
     });
+
+
+
+
+
+
+        // $('.morebtn').on('click', function () {
+        //     var targetModal = $(this).data('modal');
+        //     $('.project-modal').removeClass('show');
+        //     $('#' + targetModal).addClass('show');
+        // });
+    
+        // $('.project-modal .close-btn').on('click', function () {
+        //     $(this).closest('.project-modal').removeClass('show');
+        // });
+    
+        // $(window).on('click', function (e) {
+        //     if ($(e.target).hasClass('project-modal')) {
+        //         $('.project-modal').removeClass('show');
+        //     }
+        // });
+ 
 	
 	
 
@@ -148,10 +170,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
-
-
 
 
 
