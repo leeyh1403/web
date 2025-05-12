@@ -136,6 +136,9 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 40px;line-heig
 #section-04 ul.list li .txtbox strong{font-size: 2.5em;display: block;margin-bottom: 23px;font-weight: 600;border-bottom: 1px solid #ffffff47;padding-bottom: 27px;line-height: 1.1;}
 #section-04 ul.list li .txtbox p{ font-size: 1.2em; margin-bottom: 20px;  color: rgba(255,255,255,0.7);}
 #section-04 #menu2 ul.list li .imgbox{  height: auto;   box-shadow: none;}
+#section-04 ul.list li .txtbox .pp-btn{ padding-top: 25px;}
+#section-04 ul.list li .txtbox .pp-btn a{ padding: 10px 15px; border: 1px solid rgba(255,255,255,0.4); border-radius: 5px; font-size: 1.05em;}
+#section-04 ul.list li .txtbox .pp-btn a:hover{ background: #fff; color: #243da9; transition: 0.3s;}
 
 .pp-wrap{width: 100%;display: flex;align-items: flex-start;}
 .pp-wrap .pp-tab{display: flex;/* position: relative; */margin-top: 15px;}
@@ -167,6 +170,8 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 40px;line-heig
   overflow: auto;
 }
 
+
+
 /* 모달 콘텐츠 */
 .modal-content {
   background-color: #fff;
@@ -176,6 +181,8 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 40px;line-heig
   width: 80%;
   max-width: 800px;
 }
+
+.modal.project .modal-content{width: 100%; max-width: max-content; margin: 0; padding: 0; border: 0;}
 
 .modal-content img {
   width: 100%;
@@ -193,8 +200,6 @@ strong.imp_tit + p{font-size: 1.25em;font-weight: 300;margin-top: 40px;line-heig
   right: 40px;
   top: 30px;
 }
-
-
 
 
 
